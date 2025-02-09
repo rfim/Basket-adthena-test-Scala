@@ -1,0 +1,17 @@
+run = "sbtn run"
+hidden = [".metals", "*.class", "target", ".bsp"]
+entrypoint = "main.scala"
+
+[nix]
+channel = "stable-24_05"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", ".metals"]
+
+[languages]
+
+[languages.scala]
+pattern = "**/*.scala"
+
+[languages.scala.languageServer]
+start = "metals"
