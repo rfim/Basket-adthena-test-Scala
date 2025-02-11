@@ -1,5 +1,57 @@
-*.class
+# ----------------------------
+# sbt / Scala project settings
+# ----------------------------
+
+# Build directories
+target/
+project/target/scala-2.12   # Ignore all files and directories under project/targets/
+project/streams
+target/scala-2.12/update/* 
+target/* 
+
+# Managed source directories (generated code)
+lib_managed/
+src_managed/
+
+# sbt cache and history files
+.cache/
+.history/
+
+# ----------------------------
+# IDEs and Editors
+# ----------------------------
+
+# IntelliJ IDEA
+*.iml
+.idea/
+out/
+
+# VSCode
+.vscode/
+
+# Eclipse
+.project
+.settings/
+.classpath
+
+# ----------------------------
+# OS-specific
+# ----------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ----------------------------
+# Miscellaneous
+# ----------------------------
+
+# Log files
 *.log
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Temporary files
+*.tmp
