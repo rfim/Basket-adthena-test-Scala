@@ -11,7 +11,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Expected: Milk: £1.30, Bread: £0.80 → Subtotal: £2.10, no discounts, Total: £2.10.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("2.10")
-    receipt.discountDetails shouldBe empty
+    receipt.discounts shouldBe empty
     receipt.total shouldEqual BigDecimal("2.10")
   }
 
@@ -25,7 +25,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Discount: Bread half price = £0.40; Final Total: £1.70.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("2.10")
-    receipt.discountDetails should contain (("Bread half price", BigDecimal("0.40")))
+    receipt.discounts should contain (("Bread half price", BigDecimal("0.40")))
     receipt.total shouldEqual BigDecimal("1.70")
   }
 
@@ -40,7 +40,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Subtotal: £3.40, Discount on Bread applies once: £0.40; Final Total: £3.00.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("3.40")
-    receipt.discountDetails should contain (("Bread half price", BigDecimal("0.40")))
+    receipt.discounts should contain (("Bread half price", BigDecimal("0.40")))
     receipt.total shouldEqual BigDecimal("3.00")
   }
 
@@ -49,7 +49,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     val basket = new ShoppingBasket()
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("0.00")
-    receipt.discountDetails shouldBe empty
+    receipt.discounts shouldBe empty
     receipt.total shouldEqual BigDecimal("0.00")
   }
 
@@ -62,7 +62,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Expected: 3 Apples at £1.00 each = £3.00; Discount: 3 * £0.10 = £0.30; Total: £2.70.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("3.00")
-    receipt.discountDetails should contain (("Apples 10% off", BigDecimal("0.30")))
+    receipt.discounts should contain (("Apples 10% off", BigDecimal("0.30")))
     receipt.total shouldEqual BigDecimal("2.70")
   }
 
@@ -79,7 +79,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Final Total = £4.10 - £0.60 = £3.50.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("4.10")
-    receipt.discountDetails should contain allOf (
+    receipt.discounts should contain allOf (
       ("Bread half price", BigDecimal("0.40")),
       ("Apples 10% off", BigDecimal("0.20"))
     )
@@ -102,7 +102,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Total discount = £40.00; Final Total = £305.00 - £40.00 = £265.00.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("305.00")
-    receipt.discountDetails should contain allOf (
+    receipt.discounts should contain allOf (
       ("Bread half price", BigDecimal("20.00")),
       ("Apples 10% off", BigDecimal("20.00"))
     )
@@ -117,7 +117,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Expected: Only Milk: £1.30, no discounts.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("1.30")
-    receipt.discountDetails shouldBe empty
+    receipt.discounts shouldBe empty
     receipt.total shouldEqual BigDecimal("1.30")
   }
 
@@ -129,7 +129,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Expected: No valid items added, so the basket remains empty.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("0.00")
-    receipt.discountDetails shouldBe empty
+    receipt.discounts shouldBe empty
     receipt.total shouldEqual BigDecimal("0.00")
   }
 
@@ -154,7 +154,7 @@ class PriceBasketSpec extends AnyFlatSpec with Matchers {
     // Final Total = £860.00 - £90.00 = £770.00.
     val receipt = basket.calculateReceipt
     receipt.subtotal shouldEqual BigDecimal("860.00")
-    receipt.discountDetails should contain allOf (
+    receipt.discounts should contain allOf (
       ("Bread half price", BigDecimal("80.00")),
       ("Apples 10% off", BigDecimal("10.00"))
     )
