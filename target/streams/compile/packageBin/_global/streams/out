@@ -1,1 +1,33 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/runner/Scala/target/scala-2.12/scala-playground_2.12-0.1.0-SNAPSHOT.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/runner/workspace/target/scala-2.12/pricebasket_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Item.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/Item.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Item$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/Item$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ItemCatalog$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/ItemCatalog$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ItemCatalog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/ItemCatalog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Offer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/Offer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApplesOffer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/ApplesOffer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApplesOffer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/ApplesOffer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SoupBreadOffer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/SoupBreadOffer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SoupBreadOffer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/SoupBreadOffer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Receipt.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/Receipt.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Receipt$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/Receipt$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ShoppingBasket.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/ShoppingBasket.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/runner/workspace/target/scala-2.12/classes/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

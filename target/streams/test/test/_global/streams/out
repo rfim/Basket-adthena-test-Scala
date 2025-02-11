@@ -1,0 +1,20 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PriceBasketSpec, org.scalatest.tools.Framework$$anon$1@c3d5d57, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPriceBasketSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA ShoppingBasket[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should calculate correct totals when no discount is applicable[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should apply soup and bread discount correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should resolve item names regardless of case[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle an empty basket[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should apply apples discount correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should apply combined discounts correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle large quantities of items correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should ignore unknown items[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should reject items with any typos[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle maximal input of 1000 items correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 295 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PriceBasketSpec[0m
